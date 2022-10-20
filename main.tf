@@ -24,5 +24,8 @@ resource "aws_instance" "ubuntu" {
 
   tags = {
     Name = var.instance_name
+    org = "ops"
+    billingId = "210001"
+    owner = "anna.liao"
   }
 }
