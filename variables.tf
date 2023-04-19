@@ -12,3 +12,8 @@ variable "instance_name" {
   description = "EC2 instance name"
   default = "Provisioned by Terraform"
 }
+
+variable "bucket_name" {
+  description = "S3 bucket name"
+  default = "Provisioned by Terraform"
+}

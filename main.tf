@@ -26,6 +26,14 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
     org = "ops"
     billingId = "210001"
-    owner = "anna.liao"
+    owner = "aliao"
   }
 }
+
+resource "aws_s3_bucket" "liao_tfc_bucket" {
+  bucket = "liao_tfc_bucket_DELETEME"
+
+  tags = {
+    Name = var.bucket_name
+  }
+} 
